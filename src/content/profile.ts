@@ -49,7 +49,7 @@ export const proof: { figure: string; text: string }[] = [
   { figure: "10 yrs", text: "building production systems in C# and .NET" },
   { figure: "9", text: "independent products designed and built end to end" },
   { figure: "20,000+", text: "users on revenue platforms I led across three Nigerian states" },
-  { figure: "Billions", text: "of naira in monthly state revenue processed through those platforms" },
+  { figure: "Billions", text: "of naira in monthly revenue processed for those three states" },
   { figure: "100k+", text: "API requests a day on the logistics services I build and run today" },
 ];
 
