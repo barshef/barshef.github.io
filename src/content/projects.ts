@@ -115,7 +115,7 @@ export const projects: Project[] = [
     name: "U-Orda",
     tagline: "Afro-Caribbean groceries online",
     category: "marketplace",
-    status: "live",
+    status: "testing",
     url: "u-orda.co.uk",
     blurb: "A multi-vendor grocery marketplace in the UK, formerly Shopeey. Customers fill one basket across several vendors; ordering, payment, delivery and disputes run on the platform.",
     decisions: [
@@ -139,7 +139,7 @@ export const projects: Project[] = [
       "A dealer sees only its own vehicles and enquiries.",
       "The platform checks its own database, mail and SMS providers and reports a failing one early.",
     ],
-    role: "Designed and built end to end.",
+    role: "Designed and built end to end, single-handed, for a client.",
     stack: ".NET · Next.js · SQL Server · OpenIddict",
   },
   {
