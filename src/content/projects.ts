@@ -117,7 +117,7 @@ export const projects: Project[] = [
     category: "marketplace",
     status: "testing",
     url: "u-orda.co.uk",
-    blurb: "A multi-vendor grocery marketplace in the UK, formerly Shopeey. Customers fill one basket across several vendors; ordering, payment, delivery and disputes run on the platform.",
+    blurb: "A multi-vendor grocery marketplace in the UK. Customers fill one basket across several vendors; ordering, payment, delivery and disputes run on the platform.",
     decisions: [
       "One checkout, with the order split per vendor behind the scenes.",
       "Card payments with idempotency keys, so a retried payment never charges twice.",
