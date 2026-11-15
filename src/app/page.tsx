@@ -172,7 +172,7 @@ export default function Page() {
           <div className="wrap">
             <div className="head">
               <span className="label">Experience</span>
-              <h2>Ten years, junior developer to technical lead.</h2>
+              <h2>Fifteen years in IT, from support officer to technical lead.</h2>
             </div>
             <div className="roles">
               {experience.map((e) => (

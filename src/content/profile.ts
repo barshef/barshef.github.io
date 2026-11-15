@@ -114,9 +114,9 @@ export const employerWork: { employer: string; title: string; text: string; url?
     text: "Microsoft YARP with Keycloak single sign-on, a backend-for-frontend so browsers never hold tokens, and Redis-backed sessions. I architected it and led the build.",
   },
   {
-    employer: "Xpress Payment Solutions",
+    employer: "ICMA Professional Services",
     title: "Payout disbursement platform",
-    text: "Fund disbursement integrated with the NIBSS processor, plus revenue collection platforms for state banks. Asynchronous processing made it 30% faster.",
+    text: "Built on secondment to a sister payments company: fund disbursement integrated with the NIBSS processor, plus revenue collection platforms for state banks. Asynchronous processing made it 30% faster.",
   },
   {
     employer: "Advanced Supply Chain",
@@ -142,8 +142,8 @@ export const experience: { period: string; title: string; employer: string; text
   {
     period: "Apr 2021 – Mar 2022",
     title: "Senior Software Developer",
-    employer: "Xpress Payment Solutions",
-    text: "Designed secure payment platforms, including the Payout disbursement platform on NIBSS, and led delivery with banking clients.",
+    employer: "ICMA Professional Services",
+    text: "Architected revenue collection platforms for state banks and, on secondment to a sister payments company, designed secure payment platforms including the Payout disbursement platform on NIBSS.",
   },
   {
     period: "Feb 2019 – Mar 2021",
@@ -156,6 +156,18 @@ export const experience: { period: string; title: string; employer: string; text
     title: "Junior Software Developer",
     employer: "ICMA Professional Services",
     text: "Co-developed the original TaxSmart Suite, ran its deployment at a state internal revenue service and integrated with the Federal Road Safety Commission.",
+  },
+  {
+    period: "Jun 2013 – Jul 2016",
+    title: "Head, Application Implementation Officer",
+    employer: "ICMA Professional Services",
+    text: "Headed the deployment, support and user training for all company software on site at a state internal revenue service: revenue monitoring, receipts, tax clearance certificates, reconciliation and audit. System analyst and co-developer on EasyReg, a vehicle registration platform.",
+  },
+  {
+    period: "Nov 2011 – Jun 2013",
+    title: "Information Technology Officer",
+    employer: "ICMA Professional Services",
+    text: "IT support and training for staff and clients, system repairs and software installation. Designed and deployed Arms-Trend, an offline taxpayer monitoring system, my first production software.",
   },
 ];
 
