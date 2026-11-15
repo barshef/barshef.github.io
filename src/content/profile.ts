@@ -28,7 +28,7 @@ export const profile = {
   ],
   headline: "I build the software that moves money and keeps the record straight.",
   summary:
-    "Ten years in C# and .NET across banking, payments, government revenue and logistics. I design secure, distributed systems on Azure, build on Dynamics 365 CE and the Power Platform, and have led teams as a Technical Lead. Alongside my day job I design, build and run my own products, including a core banking platform that is live with a microfinance bank.",
+    "Ten years in C# and .NET across banking, payments, government revenue and logistics. I design secure, distributed systems on Azure, build on Dynamics 365 CE and the Power Platform, and have led teams as a Technical Lead. Alongside my day job I design, build and run my own products, including a core banking platform that is live with a client microfinance bank.",
   description:
     "Senior Software Engineer and Solutions Architect. Ten years in C# and .NET across banking, payments, government revenue and logistics, and nine independent products.",
   location: "Sheffield, UK",
