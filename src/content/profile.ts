@@ -161,7 +161,7 @@ export const experience: { period: string; title: string; employer: string; text
     period: "Jun 2013 – Jul 2016",
     title: "Head, Application Implementation Officer",
     employer: "ICMA Professional Services",
-    text: "Headed the deployment, support and user training for all company software on site at a state internal revenue service: revenue monitoring, receipts, tax clearance certificates, reconciliation and audit. System analyst and co-developer on EasyReg, a vehicle registration platform.",
+    text: "Headed the deployment, support and user training for all company software on site at a state internal revenue service: revenue monitoring, receipts, tax clearance certificates, reconciliation and audit.",
   },
   {
     period: "Nov 2011 – Jun 2013",
