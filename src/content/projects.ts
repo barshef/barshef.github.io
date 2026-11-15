@@ -69,7 +69,7 @@ export const projects: Project[] = [
     status: "live",
     url: "moniqora.kaass.co.uk",
     featured: true,
-    blurb: "A multi-tenant banking platform for microfinance banks, lenders, cooperatives and government revenue offices. Live in production with a client bank.",
+    blurb: "A multi-tenant banking platform for microfinance banks, lenders, cooperatives and government revenue offices. Live in production with a client microfinance bank.",
     decisions: [
       "General ledger, NIBSS interbank transfers with settlement reconciliation, lending, AML screening and regulatory returns.",
       "Every institution's data is scoped to that institution in every query. No report, cache or export crosses that line.",
