@@ -57,6 +57,12 @@ export const STATUS_TONE: Record<Status, "live" | "test" | "idle"> = {
 };
 
 /**
+ * Switch to true to show each project's status pill and its link, on the featured cards and in the register. It is false for now:
+ * the page says what I built, not what is live or where. The `status` and `url` of every project stay in the list below.
+ */
+export const showStatusAndLinks = false;
+
+/**
  * Adding a project: add an entry here. The featured cards, the register, its filters and its count all read this list.
  * A test fails if a company name appears in this file or in profile.ts.
  */
@@ -69,13 +75,13 @@ export const projects: Project[] = [
     status: "live",
     url: "moniqora.kaass.co.uk",
     featured: true,
-    blurb: "A multi-tenant banking platform for microfinance banks, lenders, cooperatives and government revenue offices. Live in production with a client microfinance bank.",
+    blurb: "A multi-tenant banking platform for microfinance banks, lenders, cooperatives and government revenue offices.",
     decisions: [
       "General ledger, NIBSS interbank transfers with settlement reconciliation, lending, AML screening and regulatory returns.",
       "Every institution's data is scoped to that institution in every query. No report, cache or export crosses that line.",
       "Sensitive actions need a second person, and every transaction posts to the ledger exactly once.",
     ],
-    role: "Architect, sole engineer and operator. First built in 2022, rebuilt in 2025–26 as a modular monolith with blue-green deployments.",
+    role: "Architect and sole engineer. First built in 2022, rebuilt in 2025–26 as a modular monolith with blue-green deployments.",
     stack: ".NET 10 modular monolith · Vertical Slice Architecture · Next.js · Expo · PostgreSQL / SQL Server · Quartz.NET · Azure Pipelines",
   },
   {

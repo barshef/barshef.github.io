@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CATEGORIES, CATEGORY_LABEL, STATUS_LABEL, STATUS_TONE, type Category, type Project } from "@/content/projects";
+import { CATEGORIES, CATEGORY_LABEL, STATUS_LABEL, STATUS_TONE, showStatusAndLinks, type Category, type Project } from "@/content/projects";
 
 export function StatusPill({ project }: { project: Project }) {
   return <span className={`pill ${STATUS_TONE[project.status]}`}>{STATUS_LABEL[project.status]}</span>;
@@ -20,6 +20,8 @@ export function ProjectLink({ project }: { project: Project }) {
 export default function ProjectRegister({ projects }: { projects: Project[] }) {
   const [filter, setFilter] = useState<Category | "all">("all");
   const shown = projects.filter((p) => filter === "all" || p.category === filter);
+  /* Without the status and link columns the row uses the narrower grid. */
+  const cols = showStatusAndLinks ? "cols" : "cols slim";
 
   return (
     <div className="dir">
@@ -35,27 +37,29 @@ export default function ProjectRegister({ projects }: { projects: Project[] }) {
           ))}
         </div>
       </div>
-      <div className="cols dir-head label" aria-hidden="true">
+      <div className={`${cols} dir-head label`} aria-hidden="true">
         <span>Project</span>
         <span>What it does</span>
         <span>Category</span>
-        <span>Status</span>
-        <span>Link</span>
+        {showStatusAndLinks && <span>Status</span>}
+        {showStatusAndLinks && <span>Link</span>}
         <span />
       </div>
       {shown.map((p) => (
         <details key={p.slug} data-testid="project-row">
-          <summary className="cols">
+          <summary className={cols}>
             <span className="d-name">
               {p.name}
               <small>{p.tagline}</small>
             </span>
             <span className="d-desc">{p.blurb}</span>
             <span className="d-cat">{CATEGORY_LABEL[p.category]}</span>
-            <span className="d-status">
-              <StatusPill project={p} />
-            </span>
-            <ProjectLink project={p} />
+            {showStatusAndLinks && (
+              <span className="d-status">
+                <StatusPill project={p} />
+              </span>
+            )}
+            {showStatusAndLinks && <ProjectLink project={p} />}
             <i className="chev" aria-hidden="true" />
           </summary>
           <div className="more">

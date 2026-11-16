@@ -2,7 +2,7 @@ import Image from "next/image";
 import CopyButton from "@/components/CopyButton";
 import ProjectRegister, { ProjectLink, StatusPill } from "@/components/ProjectRegister";
 import { capabilities, cvFile, employerWork, experience, openToRoles, profile, proof, recognition, showCvDownload, skills } from "@/content/profile";
-import { featuredProjects, projects } from "@/content/projects";
+import { featuredProjects, projects, showStatusAndLinks } from "@/content/projects";
 import portrait from "../../public/portrait.jpg";
 
 const bare = (url: string) => url.replace(/^https?:\/\//, "");
@@ -107,10 +107,10 @@ export default function Page() {
           <div className="wrap">
             <div className="head">
               <span className="label">Independent projects</span>
-              <h2>Products I designed, built and run myself.</h2>
+              <h2>Products I designed and built myself.</h2>
               <p>
-                These are my own work, from the first design document to the production deployment. Most of the source is private because the
-                products are commercial, and I am happy to walk through the architecture and code of any of them in an interview.
+                These are my own work, built in my own time, from the first design document to deployment. Most of the source is private, and
+                I am happy to walk through the architecture and code of any of them.
               </p>
             </div>
             <div className="feat">
@@ -121,7 +121,7 @@ export default function Page() {
                       <h3>{p.name}</h3>
                       <div className="tag">{p.tagline}</div>
                     </div>
-                    <StatusPill project={p} />
+                    {showStatusAndLinks && <StatusPill project={p} />}
                   </div>
                   <p>{p.blurb}</p>
                   <ul>
@@ -132,7 +132,7 @@ export default function Page() {
                   <div className="stack">{p.stack}</div>
                   <div className="card-foot">
                     <span>{p.role.split(". ")[0].replace(/\.$/, "")}.</span>
-                    <ProjectLink project={p} />
+                    {showStatusAndLinks && <ProjectLink project={p} />}
                   </div>
                 </article>
               ))}
