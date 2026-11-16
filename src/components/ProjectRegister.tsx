@@ -75,6 +75,12 @@ export default function ProjectRegister({ projects }: { projects: Project[] }) {
               <h4>My role</h4>
               <p>{p.role}</p>
               <div className="stack">{p.stack}</div>
+              {/* Public source code is always linked; product sites follow the showStatusAndLinks switch. */}
+              {p.status === "source" && p.url && (
+                <p className="src-link">
+                  <ProjectLink project={p} />
+                </p>
+              )}
             </div>
           </div>
         </details>

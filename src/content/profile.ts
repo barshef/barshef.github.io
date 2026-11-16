@@ -131,7 +131,7 @@ export const experience: { period: string; title: string; employer: string; text
     period: "Feb 2023 – Present",
     title: "Software Developer",
     employer: "Advanced Supply Chain Ltd",
-    text: "Build and run the warehouse and logistics APIs and the background-services platform. Set up the team's release manager rota, mentor three junior developers and work with distributed teams.",
+    text: "Build and run the warehouse and logistics APIs and the background-services platform. Set up the team's release manager rota, mentor junior developers and work with distributed teams.",
   },
   {
     period: "Apr 2022 – Feb 2023",
